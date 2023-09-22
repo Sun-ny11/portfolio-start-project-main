@@ -2,11 +2,13 @@ import React from "react";
 import styled from "styled-components";
 import { Icon } from "../../components/icon/Icon";
 import { FlexWrapper } from "../../components/FlexWrapper";
+import { Container } from "../../components/Container";
 
 export const Footer =() => {
    return (
       <StyledFooter>
-         <FlexWrapper direction={"column"} align={"center"}>
+         <Container>
+            <FlexWrapper direction={"column"} align={"center"}>
             <Name>Stanislav</Name>
             <SocialList>
                <SocialItem>
@@ -36,6 +38,8 @@ export const Footer =() => {
             </SocialList>
             <Copyright>© 2023 Stanislav Petrov, All Rights Reserved.</Copyright>
          </FlexWrapper>
+         </Container>
+
          
       </StyledFooter>
    );
