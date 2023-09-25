@@ -37,7 +37,9 @@ export const GlobalStyle = createGlobalStyle`
       background-color: unset;
       border: none;
    }
-
+   section {
+      padding: 100px 0;
+   }
    section:nth-of-type(odd){
       background-color: ${theme.colors.primaryBg};
    }
