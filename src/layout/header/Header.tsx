@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { Logo } from "../../components/logo/Logo";
-import { Menu } from "../../components/meny/Menu";
+import { TabMenu } from "../sections/works/tabMenu/TabMenu";
 import { Container } from "../../components/Container";
 import { FlexWrapper } from "../../components/FlexWrapper";
 import { theme } from "../../styles/Theme";
