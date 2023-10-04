@@ -4,12 +4,12 @@ import { Link } from "../../../../components/Link";
 
 
 
-export const TabMenu =(props:{itemsMenu:Array<string>}) => {
+export const TabMenu =(props:{tabsItems:Array<string>}) => {
    return (
       <StyledTabMenu>
             <ul>
 
-               {props.itemsMenu.map((item, index) => {
+               {props.tabsItems.map((item, index) => {
                   return <ListItem key={index}>
                         <Link href="">{item}</Link>  
                      </ListItem>
