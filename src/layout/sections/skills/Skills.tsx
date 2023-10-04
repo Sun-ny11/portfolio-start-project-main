@@ -50,7 +50,7 @@ export const Skills: React.FC =() => {
                   return <Skill iconId={s.iconId} key={index}
                   title={s.title} 
                   description={s.description}/>
-               })};
+               })}
             </FlexWrapper>
          </Container>
          
