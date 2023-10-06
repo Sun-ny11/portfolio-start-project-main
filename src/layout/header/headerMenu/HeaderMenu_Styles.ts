@@ -1,17 +1,13 @@
 import styled, { css } from "styled-components"
 import { theme } from "../../../styles/Theme"
+import { Link } from "react-scroll"
 
 
 //Menu
-const Link = styled.a`
-   color: #7572D5;
-   text-align: center;
-   font-family: "Josefin Sans", sans-serif;
-   font-size: 30px;
-   font-weight: 400;
-   color: transparent;
-
+const MenuItem = styled.li`
+   position: relative;
 `
+
 const Mask = styled.span`
    position: absolute;
    top: 0;
@@ -21,44 +17,54 @@ const Mask = styled.span`
    overflow-y: hidden;
    /* outline: 1px solid red; */
    color: ${theme.colors.accent};
+   transition:${theme.animation.transition};
 
    & + & {
       top: 50%;
       span {
          display: inline-block;
          transform: translateY(-50%);
-      }
-   }
+      };
+   };
 `
-const MenuItem = styled.li`
-   position: relative;
+
+const NavLink = styled(Link)`
+   color: #7572D5;
+   text-align: center;
+   font-family: "Josefin Sans", sans-serif;
+   font-size: 30px;
+   font-weight: 400;
+   color: transparent;
+
    &::before {
       content: "";
       height: 3px;
       background-color:${theme.colors.accent};
-      display: none;
+      display: inline-block;
+
       position: absolute;
       top: 50%;
       left: -10px;
       right: -10px;
       z-index: 1;
-
+      transition:${theme.animation.transition};
+      transform: scale(0);
    }
-   
-   &:hover {
+
+   &:hover, &.active {
       &::before {
-         display:inline-block;
-      }
-      ${Mask} {
          transform: scale(1);
+      };
+      ${Mask} {
+         
          transform: skewX(11deg) translateX(5px);
          color: ${theme.colors.font};
          & + ${Mask} {
             transform: skewX(11deg) translateX(-5px);
-         }
-      }
+         };
+      };
       
-   }
+   };
 `
 
 // Mobile menu 
@@ -75,21 +81,30 @@ const MobileMenuPopup = styled.div<{isOpen: boolean}>`
    right: 0;
    bottom: 0;
    z-index: 9999;
-   background-color: rgba(31, 31, 32, 0.90);
-   display: none;
+   background-color: rgba(31, 31, 32, 0.90); 
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   transform: translateY(-100%);
+   transition: .8s ease-in-out;
 
-   ${props => props.isOpen && css<{isOpen: boolean}>`
-      display: flex;
-      justify-content: center;
-      align-items: center;
-   `}
+   
    ul {
       display: flex; 
-      gap: 30px;
+      gap: 5px;
       justify-content: center;
       flex-direction: column;
       align-items: center;
+      transition: .8s ease-in-out;
    }
+
+   ${props => props.isOpen && css<{isOpen: boolean}>`
+         transform: translateY(0);
+         & ul {
+            gap: 30px;
+         }
+      `}
+
 `
 const BurgerButton = styled.button<{isOpen: boolean}>`
    position: fixed;
@@ -154,7 +169,7 @@ const DesctopMenu = styled.nav`
 `
 
 export const S = {
-   Link,
+   NavLink,
    MenuItem,
    Mask,
    MobileMenu,

@@ -19,9 +19,11 @@ const Photo = styled.img`
    }
 `
 const MainTitle = styled.h1`
-${font({weight:400, Fmax: 27, Fmin: 20})}
-   font-size: 27px;
-   font-weight: 400;
+${font({weight:400, Fmax: 27, Fmin: 20})}; 
+p {
+   display: none;
+}
+
 `
 
 const Name = styled.h2`
@@ -67,7 +69,7 @@ const PhotoWrapper = styled.div`
       
       position: absolute;
       top: -24px;
-      left: 34px;
+      left:24px;
       z-index: -1;
 
       @media ${theme.media.mobile} {

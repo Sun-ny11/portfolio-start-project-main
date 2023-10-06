@@ -7,6 +7,7 @@ import { theme } from "../../../styles/Theme"
 
 //Works
 const Works = styled.section`
+position: relative;
    ${FlexWrapper} {
       gap: 30px;
    }
@@ -16,8 +17,8 @@ const Works = styled.section`
 //Work
 const Work = styled.div`
    background-color: ${theme.colors.secondaryBg};
-   width: 330px;
-   flex-grow: 1;
+   /* width: 330px;
+   flex-grow: 1; */
 
    ${Link} {
       padding: 10px 0;
@@ -26,9 +27,9 @@ const Work = styled.div`
       }
    }
 
-   @media ${theme.media.desktop} {
+   /* @media ${theme.media.desktop} {
       max-width: 540px;
-   }
+   } */
 `
 const Image = styled.img`
    width: 100%;
@@ -52,7 +53,8 @@ const ImageWrapper = styled.div`
       position: absolute;
       left: 50%;
       top: 50%;
-      transform: translate(-50%, -50%);
+      transform: translate(-50%, -40%);
+      transition: ${theme.animation.transition};
 
       &::before {
          width: 100%;
@@ -68,16 +70,19 @@ const ImageWrapper = styled.div`
       bottom: 0;
       top: 0;
       background: rgba(0, 0, 0, 0.30);
-      backdrop-filter: blur(4px);
+      backdrop-filter: blur(2px);
       opacity:0;
+      transition: ${theme.animation.transition};
       }
    &:hover {
          &::before {
          content: "";
          opacity: 1;
+         
          }
    ${Button} {
          opacity: 1;
+         transform: translate(-50%, -50%);
       }
    }
    
