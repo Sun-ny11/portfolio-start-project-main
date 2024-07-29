@@ -1,19 +1,22 @@
 {
   "files": {
     "main.css": "/portfolio-start-project-main/static/css/main.f5b4e6f1.css",
-    "main.js": "/portfolio-start-project-main/static/js/main.e23b1446.js",
+    "main.js": "/portfolio-start-project-main/static/js/main.eec502de.js",
     "static/js/787.25eaef86.chunk.js": "/portfolio-start-project-main/static/js/787.25eaef86.chunk.js",
+    "static/media/Landing.webp": "/portfolio-start-project-main/static/media/Landing.3a881a52470ce0826c01.webp",
     "static/media/photo.webp": "/portfolio-start-project-main/static/media/photo.c68f516125a1438f965a.webp",
     "static/media/proj1.webp": "/portfolio-start-project-main/static/media/proj1.f4264469c0e20ce5f20d.webp",
-    "static/media/proj2.webp": "/portfolio-start-project-main/static/media/proj2.e294a9180f3031d1b313.webp",
-    "static/media/icons-sprite.svg": "/portfolio-start-project-main/static/media/icons-sprite.33780c4b31cc8b8070f00188829ebae8.svg",
+    "static/media/Cards.webp": "/portfolio-start-project-main/static/media/Cards.d10e4b07283a81d6a723.webp",
+    "static/media/icons-sprite.svg": "/portfolio-start-project-main/static/media/icons-sprite.b27fc7de6ffea8da037d7a6da1aac4e9.svg",
+    "static/media/Planer.webp": "/portfolio-start-project-main/static/media/Planer.6e01cb3cb0c9aeb65b74.webp",
+    "static/media/Converter.webp": "/portfolio-start-project-main/static/media/Converter.93d165ac288f6b9be873.webp",
     "index.html": "/portfolio-start-project-main/index.html",
     "main.f5b4e6f1.css.map": "/portfolio-start-project-main/static/css/main.f5b4e6f1.css.map",
-    "main.e23b1446.js.map": "/portfolio-start-project-main/static/js/main.e23b1446.js.map",
+    "main.eec502de.js.map": "/portfolio-start-project-main/static/js/main.eec502de.js.map",
     "787.25eaef86.chunk.js.map": "/portfolio-start-project-main/static/js/787.25eaef86.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.f5b4e6f1.css",
-    "static/js/main.e23b1446.js"
+    "static/js/main.eec502de.js"
   ]
 }
