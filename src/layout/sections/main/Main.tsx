@@ -11,7 +11,7 @@ export const Main: React.FC =() => {
    return (
       <S.Main id={"home"}>
          <Container>
-            <FlexWrapper align={"center"} justify={"space-around"} wrap={"wrap"}>
+            <FlexWrapper align={"center"} justify={"space-around"} wrap={"wrap"} customWrap={"nowrap"}>
                <div>
                   <S.SmaleText>Hi There</S.SmaleText>
                   <S.Name>I am <span>Stanislav Petrov</span></S.Name>

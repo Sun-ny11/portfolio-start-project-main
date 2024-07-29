@@ -7,12 +7,13 @@ import { S } from "./Skils_Styles";
 import { Fade } from "react-awesome-reveal";
 
 
-const skilData =[
+const skilData =[  
+
    {
       iconId: "codeSvg",
       title: "html5",
       description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim",
-   },
+   }, 
    {
       iconId: "css",
       title: "css3",
@@ -36,6 +37,21 @@ const skilData =[
    {
       iconId: "figma",
       title: "WEB DESIgN",
+      description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim",
+   },
+   {
+      iconId: "codeSvg",
+      title: "Storybook",
+      description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim",
+   },
+   {
+      iconId: "codeSvg",
+      title: "Redux",
+      description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim",
+   },
+   {
+      iconId: "codeSvg",
+      title: "Git",
       description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim",
    },
    

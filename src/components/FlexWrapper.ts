@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { theme } from "../styles/Theme";
 
 
 type FlexWrapperPropsType = {
@@ -6,6 +7,7 @@ type FlexWrapperPropsType = {
    justify?: string
    align?: string
    wrap?: string
+   customWrap?: string
 }
 
 export const FlexWrapper = styled.div<FlexWrapperPropsType>`
@@ -15,4 +17,8 @@ export const FlexWrapper = styled.div<FlexWrapperPropsType>`
    align-items: ${props => props.align || "stretch"};
    flex-wrap: ${props => props.wrap || "nowrap"};
    height: 100%;
+   @media ${theme.media.desktop} {
+      flex-wrap: ${props => props.customWrap};
+
+   }
 `
